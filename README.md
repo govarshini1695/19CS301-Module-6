@@ -72,57 +72,96 @@ EX: 6.3 ABSTRACT CLASS METHOD
 ### AIM: To Create the abstract method calculate_area which is of the abstract class 'Shape'
 
 ### ALGORITHM:
-Step1:Get input from the user
-
-Step2:put class function to define the function using self
-
-Step3:By using the function to find the area of the rectangle and circle Step4:Execute the program.
+Step1:Import ABC and abstractmethod from the abc module.
+Step2:Make type_shape inherit from ABC.
+Step3:Define an abstract method area using the @abstractmethod decorator.
+Step4:Rectangle: Accepts length and width as attributes, implements area().
+Step5:Square: Accepts side, implements area().
+Step6:Create instances of each subclass and pass appropriate values.
+Step7:Call the area method for each object and print the results.
 
 ### PROGRAM:
-```from abc import ABC
+```
+from abc import ABC
 class Shape(ABC):
-            def calculate_area(self):
-                Pass
+    def calculate_area(self):
+        pass
+
 class Rectangle(Shape):
-               length = 5
-               breadth =3
-               def calculate_area(self):
-                   print("Area of a rectangle:",self.length * self.breadth)
+  length = 6
+  breadth = 4
+  def calculate_area(self):
+      return self.length * self.breadth
+
 class Circle(Shape):
-             radius = 4
-             def calculate_area(self):
-                     print("Area of a circle:",3.14 * self.radius * self.radius)
-a=Rectangle()
-b=Circle()
-a.calculate_area()
-b.calculate_area()
+  radius = 7
+  def calculate_area(self):
+      return 3.14 * self.radius * self.radius
+
+
+class Square(Shape):
+  length = 4
+  def calculate_area(self):
+      return self.length * self.length
+
+class triangle(Shape):
+  length = 5
+  width = 4
+  def calculate_area(self):
+      return 1/2 * self.length * self.width
+r = Rectangle()
+c = Circle()
+s = Square() 
+t = triangle()
+r.calculate_area()
+c.calculate_area()
+s.calculate_area()
+t.calculate_area()
+print("Area of a rectangle:", r.calculate_area()) 
+print("Area of a circle:", c.calculate_area()) 
+print("Area of a square:", s.calculate_area()) 
+print("Area of a triangle:", t.calculate_area()) 
+
 ```
 ### OUTPUT:
-![image](https://github.com/user-attachments/assets/a4c70e22-b3e0-417a-86d7-41f547c9d60d)
+
+![image](https://github.com/user-attachments/assets/fb94d2c8-7e21-4156-9dae-e6e49a2ca8c6)
 
 
 ### RESULT: Thus, the program has been successfully executed.
 
 EXP.No: 6.4     ENCAPSULATION
-### AIM: To Implement Encapsulation using private members –of a class rectangle with private variables length,width.
-###ALGORITHM: Step1: put class function to define the function using self Step2: By using the function to find the area of the rectangle Step3: Execute the program.
+
+### AIM: To Implement Encapsulation using private members initialized with the value as 22 change the value of the private member using getter and setter methods and also display the value of the version variable.
+
+###ALGORITHM: 
+Step1:Create a private member __version initialized to 22.
+Step2:Define a method to return the current value of __version.
+Step3:Define a method to update the value of __version.
+Step4:Call the getter method to display the initial value.
+Step5:Change __version to 23 and display the new value.
+Step6:Terminate the program.
+
+
 ###PROGRAM:
 ```
-class Rectangle:
- 	length = 0
- 	breadth = 0
-  def	init	(self):
-       self.	length = 5
-       self.	breadth = 3
-  print(self.	length)
-  print(self.	breadth)
-rect = Rectangle()
+class Robot(object):
+    def __init__(self):
+       self.__version = 22
+    def getVersion(self):
+        print(self.__version)
+    def setVersion(self, version):
+       self.__version=version
+obj = Robot()
+obj.getVersion()
+obj.setVersion(23)
+obj.getVersion()
+
 ```
 ### OUTPUT:
  
-![image](https://github.com/user-attachments/assets/ea434dc1-3f93-4a66-8828-1d815e9ff015)
+![image](https://github.com/user-attachments/assets/0a7c5af7-e853-4d2c-a0ee-6e8209f5ac26)
 
- 
 
 ### RESULT: Thus, the program has been successfully executed
 
