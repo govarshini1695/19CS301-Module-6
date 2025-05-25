@@ -8,7 +8,7 @@ ALGORITHM:
    STEP 2:Define a class with appropriate attributes.
    STEP 3:Create a member function to overload the + operator.
    STEP 4:Implement the function to add corresponding attributes of two objects.
-   STEP 5:Return a new object containing the sum of attributes.
+   STEP 5:Return a new object containing the sum of attributes. 
    STEP 6:Test the class with appropriate object addition.
    STEP 7:End the program.
 
