@@ -31,9 +31,16 @@ print("fruit mix: " ,c+d)
 ```
 
 OUTPUT:
+
+
 ![image](https://github.com/user-attachments/assets/0304b366-68ee-4a53-b851-6bd3f4423e90)
 
+
+
 RESULT:
+
 Thus the python program using the overloading operator for adding two objects is executed successfully.
+
+
 
 
