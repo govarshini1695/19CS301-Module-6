@@ -13,7 +13,7 @@ ALGORITHM:
    STEP 7:End the program.
 
 PROGRAM:
-
+ 
 ```
 class Accessories:
     def __init__(self,a,b):
