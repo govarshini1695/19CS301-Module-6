@@ -190,6 +190,7 @@ print("fruit mix: " ,c+d)
 ```
 
 OUTPUT:
+![image](https://github.com/user-attachments/assets/3005f515-c29c-4599-be16-3a5c1a8a1964)
 
 RESULT:
 
