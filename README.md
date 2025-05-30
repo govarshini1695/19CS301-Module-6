@@ -174,7 +174,7 @@ ALGORITHM: STEP 1:Start the program STEP 2:Define a class with appropriate attri
 
 PROGRAM:
 
-class Accessories:
+```class Accessories:
     def __init__(self,a,b):
         self.a=a
         self.b=b
@@ -187,9 +187,9 @@ print("apple and mango mixed:" ,a+b)
 c=str(input())
 d=str(input())
 print("fruit mix: " ,c+d)
-OUTPUT:
+```
 
-image
+OUTPUT:
 
 RESULT:
 
