@@ -73,12 +73,19 @@ EX: 6.3 ABSTRACT CLASS METHOD
 
 ### ALGORITHM:
 Step1:Import ABC and abstractmethod from the abc module.
+
 Step2:Make type_shape inherit from ABC.
+
 Step3:Define an abstract method area using the @abstractmethod decorator.
+
 Step4:Rectangle: Accepts length and width as attributes, implements area().
+
 Step5:Square: Accepts side, implements area().
+
 Step6:Create instances of each subclass and pass appropriate values.
+
 Step7:Call the area method for each object and print the results.
+
 
 ### PROGRAM:
 ```
@@ -135,11 +142,17 @@ EXP.No: 6.4     ENCAPSULATION
 ### AIM: To Implement Encapsulation using private members initialized with the value as 22 change the value of the private member using getter and setter methods and also display the value of the version variable.
 
 ###ALGORITHM: 
+
 Step1:Create a private member __version initialized to 22.
+
 Step2:Define a method to return the current value of __version.
+
 Step3:Define a method to update the value of __version.
+
 Step4:Call the getter method to display the initial value.
+
 Step5:Change __version to 23 and display the new value.
+
 Step6:Terminate the program.
 
 
@@ -170,7 +183,14 @@ SEB-ADDING TWO OBJECTS USING OVERLOADING OPERATOR
 
 AIM: TO write a python program using the overloading operator for adding two objects.
 
-ALGORITHM: STEP 1:Start the program STEP 2:Define a class with appropriate attributes. STEP 3:Create a member function to overload the + operator. STEP 4:Implement the function to add corresponding attributes of two objects. STEP 5:Return a new object containing the sum of attributes. STEP 6:Test the class with appropriate object addition. STEP 7:End the program.
+ALGORITHM: 
+STEP 1:Start the program 
+STEP 2:Define a class with appropriate attributes.
+STEP 3:Create a member function to overload the + operator. 
+STEP 4:Implement the function to add corresponding attributes of two objects. 
+STEP 5:Return a new object containing the sum of attributes. 
+STEP 6:Test the class with appropriate object addition. 
+STEP 7:End the program.
 
 PROGRAM:
 
